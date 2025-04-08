@@ -270,6 +270,10 @@ public class printE implements Visitor {
     */
    public void visit(AssignmentStatement n) {
       n.f0.accept(this);
+      System.out.println("Left hand side: " + n.f0.f0.tokenImage);
+      int beginLine = n.f0.f0.beginLine;
+      int beginColumn = n.f0.f0.beginColumn;
+      System.out.println("Line: " + beginLine + ", Column: " + beginColumn);
       n.f1.accept(this);
       n.f2.accept(this);
       n.f3.accept(this);
