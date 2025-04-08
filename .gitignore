@@ -1,0 +1,4 @@
+*.class
+minijava/*.class
+minijava/syntaxtree/*.class
+minijava/visitor/*.class
